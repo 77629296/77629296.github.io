@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/77629296/play-with-lodash.git"
+    "url": "git+https://github.com/77629296/77629296.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/77629296/play-with-lodash/issues"
+    "url": "https://github.com/77629296/77629296.github.io/issues"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
