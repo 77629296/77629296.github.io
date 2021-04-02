@@ -8,14 +8,14 @@
 
 ```js
 function implicitCall() {
-  console.log(this)
+  console.log(this);
 }
 function implicitCallStrict() {
-  'use strict'
-  console.log(this)
+  'use strict';
+  console.log(this);
 }
-implicitCall() // window
-implicitCallStrict() // undefined
+implicitCall(); // window
+implicitCallStrict(); // undefined
 ```
 
 ### Rule 2
@@ -25,11 +25,11 @@ implicitCallStrict() // undefined
 > 这里需要注意，如果 bind 返回的函数，用 new 操作符调用，此时 bind 绑定的 this 就会忽略，this 会绑定在示例上
 
 ```js
-const target = {}
+const target = {};
 // 以下三种写法是等价的
-fn.call(target, 'arg1', 'arg2')
-fn.apply(target, ['arg1', 'arg2'])
-fn.bind(target, 'arg1', 'arg2')()
+fn.call(target, 'arg1', 'arg2');
+fn.apply(target, ['arg1', 'arg2']);
+fn.bind(target, 'arg1', 'arg2')();
 ```
 
 ### Rule 3
@@ -38,10 +38,10 @@ fn.bind(target, 'arg1', 'arg2')()
 
 ```js
 function Foo() {
-  this.name = 'new method'
+  this.name = 'new method';
 }
-const foo = new Foo()
-console.log(foo.name) // new method
+const foo = new Foo();
+console.log(foo.name); // new method
 ```
 
 ### Rule 4
@@ -51,19 +51,19 @@ console.log(foo.name) // new method
 ```js
 const contextObject = {
   name: 'context',
-  fun: function () {
-    return this
+  fun: function() {
+    return this;
   },
-}
-console.log(contextObject.fun() === contextObject) // true
+};
+console.log(contextObject.fun() === contextObject); // true
 
 const wrapperContextObject = {
   name: 'wrapperContext',
   contextObject,
-}
+};
 
 // 最后调用它的对象时contextObject
-console.log(wrapperContextObject.contextObject.fun() === contextObject) // true
+console.log(wrapperContextObject.contextObject.fun() === contextObject); // true
 ```
 
 ### Rule 5
@@ -73,20 +73,20 @@ console.log(wrapperContextObject.contextObject.fun() === contextObject) // true
 ```js
 // 利用下setTimeout
 const normalFunction = {
-  fun: function () {
-    setTimeout(function () {
-      console.log(this === window)
-    })
+  fun: function() {
+    setTimeout(function() {
+      console.log(this === window);
+    });
   },
-}
-normalFunction.fun() // true
+};
+normalFunction.fun(); // true
 
 // 使用箭头函数改造下
 const arrowFunction = {
-  fun: function () {
-    console.log(this === arrowFunction)
+  fun: function() {
+    console.log(this === arrowFunction);
   },
-}
+};
 
-arrowFunction.fun() // true
+arrowFunction.fun(); // true
 ```

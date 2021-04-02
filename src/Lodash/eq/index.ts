@@ -3,7 +3,7 @@
  * eq(1, '1') false
  * eq(NaN, NaN) true
  */
- function eq(value, other) {
+function eq(value, other) {
   /**
    * value === other 严格相等
    * 可以用Object.is()吗？
@@ -20,7 +20,7 @@
    */
 
   // return value === other || (isNaN(value) && isNaN(other))
-  return value === other || (value !== value && other !== other)
+  return value === other || (value !== value && other !== other);
 }
 
-export default eq
+export default eq;

@@ -1,11 +1,11 @@
-import eq from '../eq'
+import eq from '../eq';
 /**
  * var array = [['key1', 1], ['key2', 2]]
  * assocIndexOf(array, 'key1') // 0
  * assocIndexOf(array, 'key2') // 1
  */
 function assocIndexOf(array, key) {
-  let { length } = array
+  let { length } = array;
   /**
    * length--与--length
    * 比如length=2
@@ -21,10 +21,10 @@ function assocIndexOf(array, key) {
   while (length--) {
     // 复用eq
     if (eq(array[length][0], key)) {
-      return length
+      return length;
     }
   }
-  return -1
+  return -1;
 }
 
-export default assocIndexOf
+export default assocIndexOf;

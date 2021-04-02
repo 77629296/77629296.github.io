@@ -22,4 +22,4 @@ export default {
   SetCache,
   baseFindIndex,
   strictIndexOf,
-}
+};

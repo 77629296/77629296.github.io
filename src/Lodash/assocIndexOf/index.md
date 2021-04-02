@@ -7,7 +7,8 @@
 ```jsx
 /**
  * defaultShowCode: true
- */ 
+ */
+
 import React from 'react';
 import code from './';
 
