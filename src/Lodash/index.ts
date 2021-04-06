@@ -9,6 +9,9 @@ import MapCache from './MapCache';
 import SetCache from './SetCache';
 import baseFindIndex from './baseFindIndex';
 import strictIndexOf from './strictIndexOf';
+import arrayIncludes from './arrayIncludes';
+import arrayIncludesWith from './arrayIncludesWith';
+import map from './map';
 
 export default {
   slice,
@@ -22,4 +25,7 @@ export default {
   SetCache,
   baseFindIndex,
   strictIndexOf,
+  arrayIncludes,
+  arrayIncludesWith,
+  map,
 };

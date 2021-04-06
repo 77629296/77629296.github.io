@@ -1,20 +1,20 @@
 import _ from '../';
 
-describe('slicea', () => {
+describe('slice', () => {
   var array = ['a', 'b', 'c', 'd'];
-  it('defalut', () => {
+  it('默认开始位置', () => {
     expect(_.slice(array)).toEqual(array);
   });
 
-  it('has start', () => {
+  it('开始位置为0', () => {
     expect(_.slice(array, 0)).toEqual(array);
   });
 
-  it('has start 1', () => {
+  it('开始位置为1', () => {
     expect(_.slice(array, 1)).toEqual(['b', 'c', 'd']);
   });
 
-  it('has start and end', () => {
+  it('有开始和结束位置', () => {
     expect(_.slice(array, 1, 2)).toEqual(['b']);
   });
 });
