@@ -12,6 +12,7 @@ import strictIndexOf from './strictIndexOf';
 import arrayIncludes from './arrayIncludes';
 import arrayIncludesWith from './arrayIncludesWith';
 import map from './map';
+import baseDifference from './baseDifference';
 
 export default {
   slice,
@@ -28,4 +29,5 @@ export default {
   arrayIncludes,
   arrayIncludesWith,
   map,
+  baseDifference,
 };
