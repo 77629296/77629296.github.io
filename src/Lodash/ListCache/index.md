@@ -15,5 +15,5 @@
 import React from 'react';
 import code from './';
 
-export default () => '源码在index.ts';
+export default () => '源码在index.js';
 ```

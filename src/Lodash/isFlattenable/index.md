@@ -16,5 +16,5 @@ lodash 用 `isFlattenable` 内部函数来判断某个值是否可以被展平�
 import React from 'react';
 import code from './';
 
-export default () => '源码在index.ts';
+export default () => '源码在index.js';
 ```

@@ -12,5 +12,5 @@ chunk 意味块、片，将数组切分为指定大小的块，一维数组转�
 import React from 'react';
 import code from './';
 
-export default () => '源码在index.ts';
+export default () => '源码在index.js';
 ```
