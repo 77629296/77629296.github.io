@@ -1,3 +1,7 @@
+---
+hide: true
+---
+
 # 第 2 章 bind 与 apply 实现
 
 ## bind
