@@ -1,4 +1,4 @@
-function formPairs(pairs) {
+function fromPairs(pairs) {
   const result = {};
   if (pairs == null) {
     return pairs;
@@ -9,4 +9,4 @@ function formPairs(pairs) {
   return result;
 }
 
-export default formPairs;
+export default fromPairs;

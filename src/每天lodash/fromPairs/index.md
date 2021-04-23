@@ -1,4 +1,4 @@
-# formPairs
+# fromPairs
 
 将二维数组转换为对象
 
