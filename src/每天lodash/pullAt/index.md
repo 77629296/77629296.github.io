@@ -1,6 +1,6 @@
-# baseAt
+# pullAt
 
-`baseAt` 可以根据指定的一组属性路径 `paths`，从 `object` 中取出属性路径对应的一组值。
+`pullAt` 会将数组 `array` 根据指定的索引 `indexes` 的值删除，并且返回所有删除的值。
 
 ## 代码实现
 

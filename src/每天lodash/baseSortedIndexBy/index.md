@@ -1,6 +1,4 @@
-# baseAt
-
-`baseAt` 可以根据指定的一组属性路径 `paths`，从 `object` 中取出属性路径对应的一组值。
+# baseSortedIndexBy
 
 ## 代码实现
 
