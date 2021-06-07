@@ -3,12 +3,14 @@ import baseUniq from '../baseUniq';
 import isArrayLikeObject from '../isArrayLikeObject';
 import last from '../last';
 
-function unionBy(...arrays) {
-  let iteratee = last(arrays);
-  if (isArrayLikeObject(iteratee)) {
-    iteratee = undefined;
-  }
-  return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), iteratee);
+function unionWith(...arrays) {
+  let comparator = last(arrays);
+  comparator = typeof comparator === 'function' ? comparator : undefined;
+  return baseUniq(
+    baseFlatten(arrays, 1, isArrayLikeObject, true),
+    undefined,
+    comparator,
+  );
 }
 
-export default unionBy;
+export default unionWith;
