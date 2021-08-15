@@ -1,8 +1,8 @@
 ---
-hide: true
+title: this 到底指向谁
 ---
 
-# 第 2 章 this 到底指向谁
+# this 到底指向谁
 
 ## 5 大定律
 
