@@ -1,0 +1,27 @@
+{
+  "version": "v0.0.8",
+  "notes": "fix: 优化 release 脚本 修复 updater 报错",
+  "pub_date": "2022-11-09T06:58:37.128Z",
+  "platforms": {
+    "win64": {
+      "signature": "Not Found",
+      "url": "https://github.com/77629296/fe-platform/releases/download/v0.0.8/fe-platform_0.0.8_x64_en-US.msi.zip"
+    },
+    "darwin": {
+      "signature": "Not Found",
+      "url": "https://github.com/77629296/fe-platform/releases/download/v0.0.8/fe-platform.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "Not Found",
+      "url": "https://github.com/77629296/fe-platform/releases/download/v0.0.8/fe-platform.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "Not Found",
+      "url": "https://github.com/77629296/fe-platform/releases/download/v0.0.8/fe-platform.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "Not Found",
+      "url": "https://github.com/77629296/fe-platform/releases/download/v0.0.8/fe-platform_0.0.8_x64_en-US.msi.zip"
+    }
+  }
+}
